@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Pillars from './components/Pillars';
-import Team from './components/Team';
-import Subcommittees from './components/Subcommittees';
-import JoinCTA from './components/JoinCTA';
-import Footer from './components/Footer';
-import './index.css';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Pillars from '@/components/Pillars';
+import Team from '@/components/Team';
+import Subcommittees from '@/components/Subcommittees';
+import JoinCTA from '@/components/JoinCTA';
+import Footer from '@/components/Footer';
+import '@/styles/index.css';
 
 export default function App() {
   // Global scroll-reveal observer

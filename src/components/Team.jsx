@@ -1,4 +1,4 @@
-import './Team.css';
+import '@/styles/Team.css';
 
 // Row 1: President + VP
 const topRow = [

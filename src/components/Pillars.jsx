@@ -1,4 +1,4 @@
-import './Pillars.css';
+import '@/styles/Pillars.css';
 
 const pillars = [
   {

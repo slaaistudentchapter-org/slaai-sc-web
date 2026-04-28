@@ -1,4 +1,4 @@
-import './JoinCTA.css';
+import '@/styles/JoinCTA.css';
 
 export default function JoinCTA() {
   return (

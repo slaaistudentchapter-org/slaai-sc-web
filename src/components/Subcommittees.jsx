@@ -1,4 +1,4 @@
-import './Subcommittees.css';
+import '@/styles/Subcommittees.css';
 
 const committees = [
   {

@@ -1,5 +1,5 @@
-import { useReveal } from '../hooks/useReveal';
-import './Hero.css';
+import { useReveal } from '@/hooks/useReveal';
+import '@/styles/Hero.css';
 
 export default function Hero() {
   const ref = useReveal();
