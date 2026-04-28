@@ -1,0 +1,48 @@
+/* ── SUBCOMMITTEES ── */
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.sub-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 2rem;
+  display: flex; flex-direction: column; justify-content: space-between;
+  transition: all 0.3s ease;
+  position: relative; overflow: hidden;
+}
+
+.sub-card::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 4px; background: var(--crimson);
+  opacity: 0; transition: opacity 0.3s ease;
+}
+
+.sub-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-soft);
+}
+
+.sub-card:hover::before { opacity: 1; }
+
+.sub-card h3 {
+  font-family: 'DM Sans', sans-serif; font-size: 1.1rem;
+  font-weight: 600; color: var(--ink);
+  margin-bottom: 1.5rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sub-members { display: flex; flex-direction: column; gap: 12px; }
+
+.sub-member { display: flex; align-items: center; gap: 12px; }
+
+.sub-member-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--crimson-mist);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Sans', sans-serif; font-size: 12px;
+  font-weight: 600; color: var(--crimson);
+}
+
+.sub-member-name { font-size: 14px; font-weight: 500; color: var(--ink); }

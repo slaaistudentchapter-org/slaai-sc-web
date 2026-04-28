@@ -1,0 +1,95 @@
+/* ── TEAM ── */
+
+/* Each row is a CSS grid — grid guarantees equal-height cells */
+.team-row {
+  display: grid;
+  gap: 2rem;
+  padding-top: 4rem;   /* space for avatar overflow */
+  margin-bottom: 0;
+}
+
+/* Row 1: 2 equal columns (President + VP) */
+.team-row-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 760px;
+  margin-inline: auto;   /* centre the narrower 2-col row */
+}
+
+/* Row 2: 3 equal columns (Secretary, Treasurer, Editor) */
+.team-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ── Card ── */
+.team-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0 2rem 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ── Avatar ── */
+.team-avatar {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--crimson-mist), var(--crimson-pale));
+  border: 6px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  margin: -55px auto 1.5rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.avatar-initials {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem; font-weight: 500; color: var(--crimson);
+}
+
+/* ── Text ── */
+.team-role {
+  font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--crimson);
+  font-weight: 600; margin-bottom: 0.5rem;
+}
+
+.team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem; font-weight: 600;
+  color: var(--ink); line-height: 1.2;
+}
+
+/* ── Responsive ── */
+
+/* Tablet (≤ 768px): both rows → 2 cols */
+@media (max-width: 768px) {
+  .team-row-2,
+  .team-row-3 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    /* row-gap must be > avatar negative margin (55px) so stacked cards don't overlap */
+    row-gap: 4.5rem;
+  }
+}
+
+/* Mobile (≤ 480px): single column stack */
+@media (max-width: 480px) {
+  .team-row-2,
+  .team-row-3 {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    /* 5rem (80px) > 55px avatar offset — enough clearance on every row */
+    row-gap: 5rem;
+  }
+
+  /* Extra top margin between the two row sections */
+  .team-row-3 {
+    margin-top: 1rem;
+  }
+}
