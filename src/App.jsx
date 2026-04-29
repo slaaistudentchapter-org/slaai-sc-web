@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Pillars from '@/components/Pillars';
 import Team from '@/components/Team';
 import Subcommittees from '@/components/Subcommittees';
+import Contact from '@/components/Contact';
 import JoinCTA from '@/components/JoinCTA';
 import Footer from '@/components/Footer';
 import '@/styles/index.css';
@@ -38,6 +39,7 @@ export default function App() {
         <Pillars />
         <Team />
         <Subcommittees />
+        <Contact />
         <JoinCTA />
       </main>
       <Footer />

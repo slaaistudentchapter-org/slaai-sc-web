@@ -29,6 +29,7 @@ export default function Navbar() {
           <li><a href="#pillars" onClick={handleLinkClick}>What We Do</a></li>
           <li><a href="#team" onClick={handleLinkClick}>Team</a></li>
           <li><a href="#subcommittee" onClick={handleLinkClick}>Committees</a></li>
+          <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
           <li><a href="https://slaai.lk" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>SLAAI</a></li>
           <li><a href="#join" className="nav-cta" onClick={handleLinkClick}>Join Us</a></li>
         </ul>
