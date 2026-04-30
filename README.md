@@ -1,16 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SLAAI Student Chapter Web
 
-Currently, two official plugins are available:
+This is the official website for the SLAAI Student Chapter, the student arm of the Sri Lanka Association for Artificial Intelligence (SLAAI).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+The site introduces the SLAAI Student Chapter, its mission, activities, leadership, and how to get involved. It is built with React and Vite for a fast, modern, and interactive experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Features
+- **About Us**: Learn about the chapter's vision and purpose.
+- **What We Do**: Explore the five pillars of student activity (Research, Industry, Events, Projects, Marketing).
+- **Executive Committee**: Meet the current leadership team.
+- **Subcommittees**: See the student leaders driving each domain.
+- **Contact**: Email or call the chapter directly.
+- **Join Us**: Quick link to SLAAI membership.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+
+### Setup
+1. Install dependencies:
+	```sh
+	npm install
+	```
+2. Start the development server:
+	```sh
+	npm run dev
+	```
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+```sh
+npm run build
+```
+
+### Preview Production Build
+```sh
+npm run preview
+```
+
+## Project Structure
+
+- `src/components/` — React components for each section (About, Team, Pillars, etc.)
+- `src/styles/` — CSS modules for styling
+- `public/` — Static assets
+- `index.html` — Main HTML entry point
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+Affiliated with [SLAAI](https://slaai.lk)
