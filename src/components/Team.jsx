@@ -2,21 +2,22 @@ import '@/styles/Team.css';
 
 // Row 1: President + VP
 const topRow = [
-  { initials: 'ST', role: 'President',      name: 'Shivan Tillakaratne', delay: '0s'   },
-  { initials: 'ID', role: 'Vice President', name: 'Isuru Didulantha',    delay: '0.1s' },
+  { initials: 'ST', role: 'President',      name: 'Shivan Tillakaratne', delay: '0s',   image: '/Shivan.jpeg' },
+  { initials: 'ID', role: 'Vice President', name: 'Isuru Didulantha',    delay: '0.1s', image: '/Isuru_Didulantha.jpeg' },
 ];
 
 // Row 2: Secretary, Treasurer, Editor
 const bottomRow = [
-  { initials: 'AS', role: 'Secretary',          name: 'Abinaya Subramaniam',   delay: '0.2s' },
-  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s' },
-  { initials: 'PK', role: 'Editor & Web Master', name: 'Pabasara Karunarathna', delay: '0.4s' },
+  { initials: 'AS', role: 'Secretary',          name: 'Abinaya Subramaniam',   delay: '0.2s', image: '/Abinaya_Subramaniam.jpeg' },
+  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s', image: '/Lahiru_Praveen.jpeg' },
+  { initials: 'PK', role: 'Editor & Web Master', name: 'Pabasara Karunarathna', delay: '0.4s', image: '/Pabasara_karunarathna.jpeg' },
 ];
 
-function TeamCard({ initials, role, name, delay }) {
+function TeamCard({ initials, role, name, delay, image }) {
   return (
     <div className="team-card reveal" style={{ transitionDelay: delay }}>
       <div className="team-avatar">
+        <img src={image} alt={name} loading="lazy" />
         <span className="avatar-initials">{initials}</span>
       </div>
       <div className="team-role">{role}</div>
