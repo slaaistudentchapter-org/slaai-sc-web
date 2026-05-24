@@ -35,7 +35,10 @@ h2.section-title em { font-style: italic; color: var(--crimson); }
 }
 
 .about-visual-card {
-  background: linear-gradient(135deg, var(--crimson-mist) 0%, white 100%);
+  background:
+    radial-gradient(ellipse 60% 50% at 0% 0%, rgba(139,26,74,0.14), transparent 70%),
+    radial-gradient(ellipse 55% 45% at 100% 100%, rgba(196,50,90,0.12), transparent 70%),
+    linear-gradient(135deg, var(--crimson-mist) 0%, white 100%);
   display: flex; flex-direction: column; align-items: center;
   justify-content: center; text-align: center;
   position: relative; overflow: hidden;
@@ -47,14 +50,12 @@ h2.section-title em { font-style: italic; color: var(--crimson); }
   animation: rotate 20s linear infinite;
 }
 
-.about-logo-big {
-  font-family: 'Cormorant Garamond', serif; font-size: 4rem;
-  font-weight: 600; color: var(--crimson); line-height: 1; z-index: 2;
-}
-
-.about-logo-sub {
-  font-family: 'DM Sans', sans-serif; font-size: 1.1rem;
-  font-weight: 400; color: var(--ink-muted); margin-top: 10px; z-index: 2;
+.about-logo-image {
+  position: relative;
+  z-index: 2;
+  width: clamp(200px, 60%, 320px);
+  height: auto;
+  object-fit: contain;
 }
 
 .about-est {

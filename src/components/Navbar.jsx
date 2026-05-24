@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import slaaiLogo from '@/assets/logo/slaai-v2-transparent.png';
 import '@/styles/Navbar.css';
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
     <div className="nav-wrapper">
       <nav>
         <a className="nav-logo" href="#hero">
-          <div className="nav-logo-mark">SC</div>
+          <img className="nav-logo-mark" src={slaaiLogo} alt="" width="36" height="36" />
           <span>SLAAI Student Chapter</span>
         </a>
 

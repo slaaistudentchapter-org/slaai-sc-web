@@ -1,3 +1,4 @@
+import slaaiLogo from '@/assets/logo/slaai-v2-transparent.png';
 import '@/styles/About.css';
 
 const CheckIcon = () => (
@@ -24,8 +25,13 @@ export default function About() {
 
       <div className="about-bento">
         <div className="about-card about-visual-card reveal">
-          <div className="about-logo-big">SLAAI</div>
-          <div className="about-logo-sub">Student Chapter</div>
+          <img
+            className="about-logo-image"
+            src={slaaiLogo}
+            alt="SLAAI Student Chapter"
+            width="380"
+            height="380"
+          />
           <div className="about-est">Affiliated with SLAAI — Est. 2000</div>
         </div>
 

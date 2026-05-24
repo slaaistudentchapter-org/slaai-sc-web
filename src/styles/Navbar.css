@@ -26,11 +26,9 @@ nav {
 }
 
 .nav-logo-mark {
-  width: 32px; height: 32px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--crimson), var(--crimson-deep));
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 600;
-  color: white; letter-spacing: 0.03em; flex-shrink: 0;
+  width: 36px; height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .nav-logo span {
