@@ -32,7 +32,7 @@ export default function About() {
             width="380"
             height="380"
           />
-          <div className="about-est">Affiliated with SLAAI — Est. 2000</div>
+          <div className="about-est">Affiliated with SLAAI · SLAAI established 2000</div>
         </div>
 
         <div className="about-card about-text-card reveal" style={{ transitionDelay: '0.2s' }}>

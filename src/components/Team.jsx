@@ -9,7 +9,7 @@ const topRow = [
 // Row 2: Secretary, Treasurer, Editor
 const bottomRow = [
   { initials: 'AS', role: 'Secretary',          name: 'Abinaya Subramaniam',   delay: '0.2s', image: '/Abinaya_Subramaniam.jpeg' },
-  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s', image: '/Lahiru_Praveen.jpeg' },
+  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s', image: '/Lahiru_Praveen.webp' },
   { initials: 'PK', role: 'Editor & Web Master', name: 'Pabasara Karunarathna', delay: '0.4s', image: '/Pabasara_karunarathna.jpeg' },
 ];
 

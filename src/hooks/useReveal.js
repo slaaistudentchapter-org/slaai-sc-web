@@ -8,6 +8,14 @@ export function useReveal() {
   const ref = useRef(null);
 
   useEffect(() => {
+    const container = ref.current;
+    if (!container) return undefined;
+
+    if (!('IntersectionObserver' in window)) {
+      container.querySelectorAll('.reveal').forEach(element => element.classList.add('active'));
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -19,8 +27,7 @@ export function useReveal() {
       { root: null, rootMargin: '0px', threshold: 0.1 }
     );
 
-    // Observe all .reveal elements in the document (global scope)
-    const elements = document.querySelectorAll('.reveal');
+    const elements = container.querySelectorAll('.reveal');
     elements.forEach(el => observer.observe(el));
 
     return () => observer.disconnect();

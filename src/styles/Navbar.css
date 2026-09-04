@@ -67,6 +67,10 @@ nav {
 }
 .mobile-menu-btn svg { width: 24px; height: 24px; }
 
+@media (hover: none) {
+  .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
 @media (max-width: 960px) {
   .nav-links { display: none; }
   .mobile-menu-btn { display: block; }

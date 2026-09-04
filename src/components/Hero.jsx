@@ -1,11 +1,8 @@
-import { useReveal } from '@/hooks/useReveal';
 import '@/styles/Hero.css';
 
 export default function Hero() {
-  const ref = useReveal();
-
   return (
-    <section id="hero" ref={ref}>
+    <section id="hero">
       <div className="hero-glow"></div>
 
       <div className="hero-badge reveal" style={{ transitionDelay: '0.1s' }}>
@@ -28,7 +25,7 @@ export default function Hero() {
 
       <div className="hero-bento reveal" style={{ transitionDelay: '0.5s' }}>
         <div className="hero-bento-left">
-          <div className="hero-bento-tag">Established under SLAAI</div>
+          <div className="hero-bento-tag">A student initiative of SLAAI</div>
           <h2>Artificial Intelligence for Sri Lanka</h2>
           <p>Connecting students across Sri Lanka with the world of Artificial Intelligence — through research, events, industry partnerships, and community.</p>
         </div>
