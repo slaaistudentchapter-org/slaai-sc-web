@@ -30,17 +30,20 @@ export default function Hero() {
           <p>Connecting students across Sri Lanka with the world of Artificial Intelligence — through research, events, industry partnerships, and community.</p>
         </div>
         <div className="hero-bento-right">
-          <div className="bento-stat">
-            <div className="stat-num">5</div>
-            <div className="stat-label">Exec Members</div>
+          <div className="bento-focus">
+            <span className="focus-index">01</span>
+            <h3>Nationwide Reach</h3>
+            <p>Connecting school and university communities across Sri Lanka.</p>
           </div>
-          <div className="bento-stat">
-            <div className="stat-num">5</div>
-            <div className="stat-label">Subcommittees</div>
+          <div className="bento-focus">
+            <span className="focus-index">02</span>
+            <h3>Practical Learning</h3>
+            <p>Creating workshops, demonstrations, and technical projects.</p>
           </div>
-          <div className="bento-stat">
-            <div className="stat-num">10</div>
-            <div className="stat-label">Sub Chairs</div>
+          <div className="bento-focus">
+            <span className="focus-index">03</span>
+            <h3>Academia × Industry</h3>
+            <p>Building connections with researchers and professionals.</p>
           </div>
         </div>
       </div>
