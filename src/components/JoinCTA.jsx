@@ -8,11 +8,11 @@ export default function JoinCTA() {
         <div className="join-content reveal">
           <div className="section-label join-label">Get Involved</div>
           <h2>
-            Become part of<br />
-            Sri Lanka's AI <em>student community</em>
+            Interested in joining<br />
+            the wider <em>SLAAI community?</em>
           </h2>
           <p>
-            Whether you're a researcher, a developer, or simply curious about AI — there's a place for you at the SLAAI Student Chapter.
+            Visit the SLAAI membership page for current membership categories, eligibility details, and application information.
           </p>
           <a
             href="https://slaai.lk/membership/"
@@ -20,7 +20,7 @@ export default function JoinCTA() {
             rel="noopener noreferrer"
             className="btn-white"
           >
-            Join SLAAI
+            Explore SLAAI Membership
           </a>
         </div>
       </div>

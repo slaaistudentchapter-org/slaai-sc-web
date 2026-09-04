@@ -19,7 +19,7 @@ export default function Footer() {
           </li>
         </ul>
         <div className="footer-note">
-          © 2026 SLAAI Student Chapter. The student arm of the Sri Lanka Association for Artificial Intelligence.
+          © 2026 SLAAI Student Chapter.
         </div>
       </div>
     </footer>

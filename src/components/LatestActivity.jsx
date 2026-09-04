@@ -20,7 +20,7 @@ export default function LatestActivity() {
         <div className="section-label">Latest Activity</div>
         <h2 className="section-title">Getting <em>friendly with electronics</em></h2>
         <p className="latest-intro">
-          Bringing educators closer to practical electronics and the SLAAI Student Chapter.
+          An introductory electronics session for principals and teachers from selected schools.
         </p>
       </div>
 
@@ -52,7 +52,7 @@ export default function LatestActivity() {
               loading="lazy"
             />
           </figure>
-          <span className="activity-status"><i /> Successfully concluded</span>
+          <span className="activity-status"><i /> Event completed</span>
         </div>
 
         <div className="activity-content">
@@ -61,18 +61,17 @@ export default function LatestActivity() {
             <span><VideoIcon /> Online via Zoom</span>
           </div>
 
-          <h3>“Friendly With Electronics” Workshop &amp; Electronic Kit Distribution</h3>
+          <h3>“Friendly With Electronics” Workshop &amp; Electronic Kit Introduction</h3>
           <p>
-            The SLAAI Student Chapter brought together principals and teachers from selected
-            schools across Sri Lanka for an online awareness and demonstration session. The
-            programme introduced the chapter and created a practical starting point for bringing
-            electronics learning into school communities.
+            On 4 September 2026, the SLAAI Student Chapter conducted an online introductory
+            electronics session for principals and teachers from selected schools. The programme
+            introduced the chapter and provided a practical starting point for electronics
+            learning in school communities.
           </p>
           <p>
-            At the heart of the session was the Electronic Kit developed by
-            <strong> Prof. Asoka Karunananda</strong> and <strong>Prof. Kithsiri Jayananda</strong>.
-            Participants were introduced to the kit through a demonstration, followed by its
-            distribution to support continued hands-on learning beyond the workshop.
+            The session introduced an Electronic Kit developed by
+            <strong> Prof. Asoka Karunananda</strong> and <strong>Prof. Kithsiri Jayananda</strong>
+            and included a practical demonstration of its components and applications.
           </p>
 
           <div className="activity-highlights" aria-label="Event highlights">
@@ -86,7 +85,7 @@ export default function LatestActivity() {
             </div>
             <div>
               <span>03</span>
-              <p>Hands-on learning support</p>
+              <p>Electronics learning</p>
             </div>
           </div>
         </div>

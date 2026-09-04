@@ -33,7 +33,7 @@ export default function Team() {
         <div className="section-label">Executive Committee</div>
         <h2 className="section-title">Leadership <em>2026/2027</em></h2>
         <p style={{ color: 'var(--ink-muted)', marginTop: '1rem', fontSize: '16px' }}>
-          The elected executive committee driving the chapter's vision, strategy and day-to-day operations.
+          The executive committee coordinating the chapter's activities and day-to-day operations.
         </p>
       </div>
 

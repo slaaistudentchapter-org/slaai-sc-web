@@ -20,7 +20,7 @@ export default function About() {
     <section id="about">
       <div className="section-header reveal">
         <div className="section-label">About Us</div>
-        <h2 className="section-title">The student voice of <em>Sri Lankan AI</em></h2>
+        <h2 className="section-title">Connecting students interested in <em>artificial intelligence</em></h2>
       </div>
 
       <div className="about-bento">
@@ -32,16 +32,16 @@ export default function About() {
             width="380"
             height="380"
           />
-          <div className="about-est">Affiliated with SLAAI · SLAAI established 2000</div>
+          <div className="about-est">SLAAI Student Chapter</div>
         </div>
 
         <div className="about-card about-text-card reveal" style={{ transitionDelay: '0.2s' }}>
           <h3>Bridging Ambition &amp; Practice</h3>
           <p>
-            The SLAAI Student Chapter is the official student arm of the Sri Lanka Association for Artificial Intelligence (SLAAI) — the national body devoted to advancing AI research, education, and industry in Sri Lanka since 2000.
+            The SLAAI Student Chapter brings together undergraduate and postgraduate students who are interested in artificial intelligence and related fields.
           </p>
           <p>
-            We bring together undergraduate and postgraduate students who are passionate about Artificial Intelligence, creating a space to learn, collaborate, and grow alongside Sri Lanka's leading AI professionals and researchers.
+            Through workshops, research activities, technical projects, and professional connections, the chapter provides a space for students to learn, collaborate, and contribute.
           </p>
 
           <ul className="about-list">
