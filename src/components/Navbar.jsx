@@ -28,6 +28,7 @@ export default function Navbar() {
         <ul className={`nav-links${menuOpen ? ' menu-open' : ''}`}>
           <li><a href="#about" onClick={handleLinkClick}>About</a></li>
           <li><a href="#pillars" onClick={handleLinkClick}>What We Do</a></li>
+          <li><a href="#latest" onClick={handleLinkClick}>Latest</a></li>
           <li><a href="#team" onClick={handleLinkClick}>Team</a></li>
           <li><a href="#subcommittee" onClick={handleLinkClick}>Committees</a></li>
           <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>

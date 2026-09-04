@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Pillars from '@/components/Pillars';
+import LatestActivity from '@/components/LatestActivity';
 import Team from '@/components/Team';
 import Subcommittees from '@/components/Subcommittees';
 import Contact from '@/components/Contact';
@@ -37,6 +38,7 @@ export default function App() {
         <Hero />
         <About />
         <Pillars />
+        <LatestActivity />
         <Team />
         <Subcommittees />
         <Contact />

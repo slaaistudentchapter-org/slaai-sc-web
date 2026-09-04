@@ -9,6 +9,7 @@ export default function Footer() {
         </div>
         <ul className="footer-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#latest">Latest</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#subcommittee">Committees</a></li>
           <li>
