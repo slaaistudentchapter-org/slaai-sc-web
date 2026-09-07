@@ -33,7 +33,7 @@ const pillars = [
   },
   {
     title: 'Technical Projects',
-    desc: 'Facilitating student-led AI projects that create real impact for communities and industries.',
+    desc: 'Facilitating student-led AI projects that respond to practical community and industry needs.',
     delay: '0.3s',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">

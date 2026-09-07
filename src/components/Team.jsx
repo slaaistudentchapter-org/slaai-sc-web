@@ -9,7 +9,7 @@ const topRow = [
 // Row 2: Secretary, Treasurer, Editor
 const bottomRow = [
   { initials: 'AS', role: 'Secretary',          name: 'Abinaya Subramaniam',   delay: '0.2s', image: '/Abinaya_Subramaniam.jpeg' },
-  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s', image: '/Lahiru_Praveen.jpeg' },
+  { initials: 'LP', role: 'Treasurer',           name: 'Lahiru Praveen',         delay: '0.3s', image: '/Lahiru_Praveen.webp' },
   { initials: 'PK', role: 'Editor & Web Master', name: 'Pabasara Karunarathna', delay: '0.4s', image: '/Pabasara_karunarathna.jpeg' },
 ];
 
@@ -33,7 +33,7 @@ export default function Team() {
         <div className="section-label">Executive Committee</div>
         <h2 className="section-title">Leadership <em>2026/2027</em></h2>
         <p style={{ color: 'var(--ink-muted)', marginTop: '1rem', fontSize: '16px' }}>
-          The elected executive committee driving the chapter's vision, strategy and day-to-day operations.
+          The executive committee coordinating the chapter's activities and day-to-day operations.
         </p>
       </div>
 

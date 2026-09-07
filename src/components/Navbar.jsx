@@ -1,9 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import slaaiLogo from '@/assets/logo/slaai-v2-transparent.png';
 import '@/styles/Navbar.css';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+
+    const handleKeyDown = event => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [menuOpen]);
 
   const handleLinkClick = () => setMenuOpen(false);
 
@@ -16,8 +31,11 @@ export default function Navbar() {
         </a>
 
         <button
+          ref={menuButtonRef}
           className="mobile-menu-btn"
-          aria-label="Toggle Navigation"
+          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
           onClick={() => setMenuOpen(prev => !prev)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,9 +43,10 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <ul className={`nav-links${menuOpen ? ' menu-open' : ''}`}>
+        <ul id="primary-navigation" className={`nav-links${menuOpen ? ' menu-open' : ''}`}>
           <li><a href="#about" onClick={handleLinkClick}>About</a></li>
           <li><a href="#pillars" onClick={handleLinkClick}>What We Do</a></li>
+          <li><a href="#latest" onClick={handleLinkClick}>Latest</a></li>
           <li><a href="#team" onClick={handleLinkClick}>Team</a></li>
           <li><a href="#subcommittee" onClick={handleLinkClick}>Committees</a></li>
           <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
