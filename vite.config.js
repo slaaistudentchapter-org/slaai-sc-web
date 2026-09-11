@@ -13,4 +13,12 @@ export default defineConfig({
       '@': path.resolve(currentDirectory, './src'),
     },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(currentDirectory, 'index.html'),
+        mindVerse: path.resolve(currentDirectory, 'mind-verse.html'),
+      },
+    },
+  },
 })

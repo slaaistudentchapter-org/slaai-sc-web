@@ -4,6 +4,13 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="hero-glow"></div>
+      <div className="hero-shapes" aria-hidden="true">
+        <span className="hero-shape shape-one" />
+        <span className="hero-shape shape-two" />
+        <span className="hero-shape shape-three" />
+        <span className="hero-shape shape-four" />
+        <span className="hero-shape shape-five" />
+      </div>
 
       <div className="hero-badge reveal" style={{ transitionDelay: '0.1s' }}>
         <div className="hero-badge-dot"></div>
