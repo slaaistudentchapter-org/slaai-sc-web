@@ -10,6 +10,7 @@ export default function Footer() {
         <ul className="footer-links">
           <li><a href="#about">About</a></li>
           <li><a href="#latest">Latest</a></li>
+          <li><a href="/mind-verse.html">Mind Verse</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#subcommittee">Committees</a></li>
           <li>

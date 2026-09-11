@@ -47,6 +47,7 @@ export default function Navbar() {
           <li><a href="#about" onClick={handleLinkClick}>About</a></li>
           <li><a href="#pillars" onClick={handleLinkClick}>What We Do</a></li>
           <li><a href="#latest" onClick={handleLinkClick}>Latest</a></li>
+          <li><a href="/mind-verse.html" onClick={handleLinkClick}>Mind Verse</a></li>
           <li><a href="#team" onClick={handleLinkClick}>Team</a></li>
           <li><a href="#subcommittee" onClick={handleLinkClick}>Committees</a></li>
           <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>

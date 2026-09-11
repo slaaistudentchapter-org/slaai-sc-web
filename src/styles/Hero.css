@@ -7,14 +7,71 @@
   position: relative;
   max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .hero-glow {
   position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
   width: 60vw; height: 60vw; max-width: 800px; max-height: 800px;
   background: radial-gradient(circle, var(--crimson-pale) 0%, transparent 70%);
-  z-index: -1; opacity: 0.8;
+  z-index: 0; opacity: 0.8;
 }
+
+.hero-shapes {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-shape {
+  position: absolute;
+  display: block;
+  background: linear-gradient(145deg, rgba(139,26,74,.075), rgba(196,50,90,.025));
+  border: 1px solid rgba(139,26,74,.055);
+  filter: blur(.2px);
+}
+
+.shape-one {
+  width: 240px; height: 210px; left: -70px; top: 16%;
+  border-radius: 45% 55% 62% 38% / 52% 38% 62% 48%;
+  transform: rotate(18deg);
+}
+
+.shape-two {
+  width: 150px; height: 130px; right: 8%; top: 15%;
+  clip-path: polygon(48% 0, 92% 22%, 100% 70%, 66% 100%, 15% 87%, 0 38%);
+  border-radius: 28px;
+  transform: rotate(-12deg);
+}
+
+.shape-three {
+  width: 110px; height: 110px; left: 12%; top: 48%;
+  clip-path: polygon(50% 0, 90% 18%, 100% 61%, 72% 100%, 24% 92%, 0 55%, 12% 16%);
+  transform: rotate(24deg);
+  opacity: .7;
+}
+
+.shape-four {
+  width: 290px; height: 240px; right: -110px; top: 43%;
+  border-radius: 63% 37% 42% 58% / 37% 55% 45% 63%;
+  transform: rotate(-20deg);
+}
+
+.shape-five {
+  width: 180px; height: 155px; left: 4%; bottom: 5%;
+  clip-path: polygon(22% 4%, 77% 0, 100% 36%, 85% 86%, 38% 100%, 0 70%, 3% 26%);
+  transform: rotate(-8deg);
+  opacity: .55;
+}
+
+.hero-badge,
+#hero > h1,
+.hero-tagline,
+.hero-actions,
+.hero-bento { position: relative; z-index: 1; }
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -146,4 +203,8 @@ h1 em { font-style: italic; color: var(--crimson); }
 
 @media (max-width: 600px) {
   .hero-bento-right { grid-template-columns: 1fr; }
+  .shape-one { width: 170px; height: 150px; left: -90px; }
+  .shape-two { width: 100px; height: 90px; right: -15px; top: 18%; }
+  .shape-three, .shape-five { display: none; }
+  .shape-four { width: 190px; height: 170px; right: -115px; top: 52%; }
 }
