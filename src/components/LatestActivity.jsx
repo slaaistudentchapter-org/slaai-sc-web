@@ -70,7 +70,7 @@ export default function LatestActivity() {
           </p>
           <p>
             The session introduced an Electronic Kit developed by
-            <strong> Prof. Asoka Karunananda</strong> and <strong>Prof. Kithsiri Jayananda</strong>
+            <strong> Prof. Asoka Karunananda</strong> and <strong>Prof. Kithsiri Jayananda</strong>{' '}
             and included a practical demonstration of its components and applications.
           </p>
 

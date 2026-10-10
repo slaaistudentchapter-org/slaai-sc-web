@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import slaaiLogo from '@/assets/logo/slaai-v2-transparent.png';
+import slaaiLogo from '@/assets/logo/slaai-v2-nav.png';
 import '@/styles/Navbar.css';
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
     <div className="nav-wrapper">
       <nav>
         <a className="nav-logo" href="#hero">
-          <img className="nav-logo-mark" src={slaaiLogo} alt="" width="36" height="36" />
+          <img className="nav-logo-mark" src={slaaiLogo} alt="" width="62" height="32" />
           <span>SLAAI Student Chapter</span>
         </a>
 

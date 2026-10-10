@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-logo-mark {
-  width: 36px; height: 36px;
+  width: auto; height: 32px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -38,11 +38,12 @@ nav {
 }
 
 .nav-links {
-  display: flex; align-items: center; gap: 32px;
+  display: flex; align-items: center; gap: 26px;
   list-style: none; margin-left: auto; padding-right: 20px;
 }
 
 .nav-links a {
+  white-space: nowrap;
   font-size: 13px; font-weight: 500;
   text-decoration: none; color: var(--ink-muted);
   transition: color 0.2s;
@@ -213,7 +214,7 @@ nav {
   .mind-verse-teaser-link::after { animation: none; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .nav-links { display: none; }
   .mobile-menu-btn { display: block; }
   nav { border-radius: var(--radius-sm); padding: 12px 20px; }
