@@ -142,7 +142,7 @@ h1 em { font-style: italic; color: var(--crimson); }
   border-radius: var(--radius-md);
   padding: 3rem; width: 100%; max-width: 1000px;
   box-shadow: var(--shadow-soft);
-  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+  display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center;
   text-align: left;
 }
 
@@ -151,6 +151,7 @@ h1 em { font-style: italic; color: var(--crimson); }
   font-size: 2.5rem; font-weight: 600; line-height: 1.1;
   color: var(--ink); margin-bottom: 1rem;
 }
+.hero-bento-left { max-width: 620px; }
 .hero-bento-left p { font-size: 15px; color: var(--ink-muted); line-height: 1.7; }
 
 .hero-bento-tag {
@@ -161,13 +162,13 @@ h1 em { font-style: italic; color: var(--crimson); }
 }
 
 .hero-bento-right {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
 }
 
 .bento-focus {
   min-width: 0;
   background: white;
-  padding: 1.5rem 1.25rem;
+  padding: 1.4rem 1.1rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   text-align: left;
@@ -185,19 +186,20 @@ h1 em { font-style: italic; color: var(--crimson); }
 .bento-focus h3 {
   margin-bottom: .55rem;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.35;
 }
 
 .bento-focus p {
   color: var(--ink-muted);
-  font-size: 11px;
+  font-size: 12.5px;
   line-height: 1.55;
 }
 
 @media (max-width: 960px) {
-  .hero-bento { grid-template-columns: 1fr; padding: 2rem; gap: 2rem; text-align: center; }
+  .hero-bento { padding: 2rem; text-align: center; }
+  .hero-bento-left { justify-self: center; }
   .hero-bento-right { grid-template-columns: repeat(3, 1fr); }
 }
 
